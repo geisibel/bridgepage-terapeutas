@@ -1,0 +1,629 @@
+12:53 25/08/2025<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-book Gratuito - Como Destravar Sua Agenda de Terapeuta</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            min-height: 100vh;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .bridge-card {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(15px);
+            border-radius: 25px;
+            padding: 50px;
+            text-align: center;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+            border: 1px solid rgba(255,255,255,0.3);
+            animation: fadeInUp 1s ease-out;
+            width: 100%;
+            max-width: 850px;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .ebook-icon {
+            width: 140px;
+            height: 140px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 25px;
+            margin: 0 auto 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            color: white;
+            animation: pulse 2.5s infinite;
+            box-shadow: 0 15px 35px rgba(102, 126, 234, 0.3);
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.08);
+            }
+        }
+
+        .headline-pre {
+            color: #e74c3c;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: fadeIn 1.2s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        h1 {
+            font-size: 2.6rem;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            line-height: 1.3;
+            font-weight: 800;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: #34495e;
+            margin-bottom: 35px;
+            font-weight: 400;
+            line-height: 1.5;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .pain-point {
+            background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+            border-left: 6px solid #f39c12;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 12px;
+            text-align: left;
+            font-style: italic;
+            color: #856404;
+            font-size: 1.1rem;
+            box-shadow: 0 8px 25px rgba(243, 156, 18, 0.2);
+        }
+
+        .benefits {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 40px;
+            border-radius: 20px;
+            margin: 35px 0;
+            text-align: left;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .benefits h3 {
+            color: #2c3e50;
+            margin-bottom: 25px;
+            text-align: center;
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            margin: 18px 0;
+            font-size: 1.15rem;
+            line-height: 1.6;
+            transition: transform 0.3s ease;
+        }
+
+        .benefit-item:hover {
+            transform: translateX(8px);
+        }
+
+        .benefit-item::before {
+            content: "?";
+            margin-right: 15px;
+            font-size: 1.3rem;
+            margin-top: 3px;
+            flex-shrink: 0;
+        }
+
+        .social-proof-story {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 30px;
+            border-radius: 18px;
+            margin: 30px 0;
+            text-align: left;
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
+        }
+
+        .social-proof-story h4 {
+            margin-bottom: 18px;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        .social-proof-story p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .form-container {
+            background: white;
+            padding: 45px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+            margin-top: 35px;
+            border: 2px solid #f8f9fa;
+        }
+
+        .form-title {
+            font-size: 1.6rem;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+
+        .input-group {
+            margin-bottom: 25px;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #555;
+            font-size: 1.1rem;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 20px;
+            border: 3px solid #e1e8ed;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            background: #fafbfc;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.15);
+            background: white;
+            transform: translateY(-2px);
+        }
+
+        .cta-button {
+            background: linear-gradient(45deg, #e74c3c, #c0392b);
+            color: white;
+            padding: 22px 50px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 25px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 8px 25px rgba(231, 76, 60, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(231, 76, 60, 0.4);
+            background: linear-gradient(45deg, #c0392b, #a93226);
+        }
+
+        .cta-button:active {
+            transform: translateY(-1px);
+        }
+
+        .urgency {
+            background: linear-gradient(135deg, #e8f5e8, #d4edda);
+            border: 3px solid #27ae60;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+            color: #27ae60;
+            font-weight: bold;
+            font-size: 1.15rem;
+            text-align: center;
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            from { box-shadow: 0 0 20px rgba(39, 174, 96, 0.3); }
+            to { box-shadow: 0 0 30px rgba(39, 174, 96, 0.5); }
+        }
+
+        .social-proof {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 25px 0;
+            color: #7f8c8d;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .social-proof::before {
+            content: "??";
+            margin-right: 10px;
+            font-size: 1.3rem;
+        }
+
+        .privacy-note {
+            font-size: 0.95rem;
+            color: #95a5a6;
+            margin-top: 20px;
+            line-height: 1.5;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        .author-credibility {
+            background: linear-gradient(135deg, #ecf0f1, #bdc3c7);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 25px 0;
+            font-style: italic;
+            border-left: 5px solid #3498db;
+            color: #2c3e50;
+            font-size: 1.05rem;
+        }
+
+        .success-message {
+            display: none;
+            background: linear-gradient(135deg, #d4edda, #c3e6cb);
+            color: #155724;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 25px;
+            border: 2px solid #c3e6cb;
+            animation: slideIn 0.5s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .success-message h3 {
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .hotmart-offer {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            padding: 30px;
+            border-radius: 18px;
+            margin-top: 30px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(238, 90, 36, 0.3);
+        }
+
+        .hotmart-offer h4 {
+            color: white;
+            margin-bottom: 18px;
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+
+        .hotmart-offer p {
+            color: white;
+            margin-bottom: 25px;
+            font-size: 1.15rem;
+            line-height: 1.6;
+        }
+
+        .hotmart-button {
+            background: white;
+            color: #ee5a24;
+            padding: 18px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.3rem;
+            display: inline-block;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+        }
+
+        .hotmart-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 30px rgba(255, 255, 255, 0.4);
+        }
+
+        .hotmart-urgency {
+            color: white;
+            font-size: 0.95rem;
+            margin-top: 15px;
+            opacity: 0.95;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .bridge-card {
+                padding: 30px 25px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1.3rem;
+            }
+            
+            .form-container {
+                padding: 30px 20px;
+            }
+            
+            .ebook-icon {
+                width: 120px;
+                height: 120px;
+                font-size: 50px;
+            }
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 10px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bridge-card">
+            <div class="ebook-icon">??</div>
+            
+            <div class="headline-pre">Para Terapeutas Frustrados com Agenda Vazia</div>
+            <h1>Como Destravar Sua Agenda e Atrair Pacientes Qualificados</h1>
+            <p class="subtitle">O guia definitivo para sair da dependência de templates prontos e criar um marketing que realmente funciona para terapeutas</p>
+            
+            <div class="pain-point">
+                <strong>"Você compra template atrás de template, mas sua agenda continua vazia... 
+                Posta nas redes sociais religiosamente, mas ninguém marca consulta... 
+                Sabe que tem muito conhecimento a oferecer, mas não consegue chegar até quem realmente precisa da sua ajuda?"</strong>
+            </div>
+
+            <div class="social-proof-story">
+                <h4>?? A mesma situação que eu vivia há apenas 5 meses atrás...</h4>
+                <p>Eu estava exatamente como você: comprando templates prontos, sem direção clara, postando conteúdo sem ver resultados. Até descobrir que <strong>marketing eficaz = tráfego qualificado + estratégia direcionada</strong>. Hoje criei meus próprios produtos digitais e tenho uma agenda que funciona de verdade, com pacientes que realmente valorizam meu trabalho.</p>
+            </div>
+
+            <div class="benefits">
+                <h3>?? Neste e-book GRATUITO você vai descobrir:</h3>
+                <div class="benefit-item">Como identificar exatamente onde está o "buraco" na sua estratégia de captação de pacientes</div>
+                <div class="benefit-item">O método simples para transformar seguidores em pacientes pagantes (sem ser invasivo ou "vendedor")</div>
+                <div class="benefit-item">3 tipos de conteúdo que geram agenda lotada (e não são mais posts motivacionais genéricos)</div>
+                <div class="benefit-item">Como usar tráfego pago de forma inteligente, mesmo com orçamento pequeno</div>
+                <div class="benefit-item">A fórmula para precificar seus atendimentos sem medo (e ser respeitado por isso)</div>
+                <div class="benefit-item">Scripts prontos para converter leads em consultas marcadas</div>
+                <div class="benefit-item">O segredo para criar autoridade no seu nicho terapêutico</div>
+                <div class="benefit-item">Como automatizar parte da captação sem perder o toque humano</div>
+            </div>
+
+            <div class="author-credibility">
+                <p><strong>?? Escrito por alguém que saiu do zero absoluto e está construindo um negócio sólido na área terapêutica.</strong> Não são teorias abstratas, mas estratégias testadas e aprovadas no mundo real, por quem entende as dificuldades específicas dos profissionais da nossa área.</p>
+            </div>
+
+            <div class="urgency">
+                ? <strong>ATENÇÃO:</strong> Este material é baseado em estratégias do renomado curso PGT da Ana Neves Cardoso e está disponível por tempo limitado para terapeutas que querem definitivamente sair da zona de conforto!
+            </div>
+
+            <div class="form-container">
+                <h3 class="form-title">?? Baixe GRATUITAMENTE e comece sua transformação hoje mesmo:</h3>
+                
+                <form id="leadForm" onsubmit="handleSubmit(event)">
+                    <div class="input-group">
+                        <label for="nome">Seu nome completo:</label>
+                        <input type="text" id="nome" name="nome" required placeholder="Como posso te chamar?" maxlength="50">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="email">Seu melhor e-mail:</label>
+                        <input type="email" id="email" name="email" required placeholder="Onde envio seu e-book exclusivo?">
+                    </div>
+                    
+                    <button type="submit" class="cta-button" id="submitBtn">
+                        ?? Quero Destravar Minha Agenda Agora!
+                    </button>
+                </form>
+
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    <p>Enviando seu e-book...</p>
+                </div>
+
+                <div class="success-message" id="successMessage">
+                    <h3>?? E-book enviado com sucesso!</h3>
+                    <p><strong>Verifique sua caixa de entrada (e spam também) nos próximos minutos.</strong><br>
+                    Agora é hora de aplicar as estratégias e transformar sua agenda de uma vez por todas!</p>
+                    
+                    <div class="hotmart-offer">
+                        <h4>?? QUER IR MUITO ALÉM DO BÁSICO?</h4>
+                        <p>Se você está determinado(a) a dominar completamente marketing e tráfego para terapeutas, conheça o <strong>PGT da Ana Neves Cardoso</strong> - o mesmo curso que me transformou de "compradora compulsiva de templates" em criadora de produtos próprios com agenda consistente!</p>
+                        <a href="https://go.hotmart.com/G101013136K" target="_blank" class="hotmart-button">
+                            ?? Conhecer o PGT Completo
+                        </a>
+                        <p class="hotmart-urgency">? Transformação real começa com conhecimento estratégico!</p>
+                    </div>
+                </div>
+
+                <div class="social-proof">
+                    Mais de 2.847 terapeutas já transformaram suas agendas com este material!
+                </div>
+                
+                <div class="privacy-note">
+                    ?? <strong>Seus dados estão 100% seguros e protegidos.</strong> Não compartilhamos com terceiros e você pode cancelar quando quiser.<br>
+                    ?? Além do e-book, você receberá dicas exclusivas por e-mail para acelerar seus resultados (mas pode cancelar a qualquer momento se desejar).
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            const nome = document.getElementById('nome').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const submitBtn = document.getElementById('submitBtn');
+            const loading = document.getElementById('loading');
+            const successMessage = document.getElementById('successMessage');
+            const form = document.getElementById('leadForm');
+            
+            // Validações básicas
+            if (!nome || nome.length < 2) {
+                alert('Por favor, digite seu nome completo.');
+                return;
+            }
+            
+            if (!email || !email.includes('@') || !email.includes('.')) {
+                alert('Por favor, digite um e-mail válido.');
+                return;
+            }
+            
+            // Mostrar loading
+            submitBtn.style.display = 'none';
+            loading.style.display = 'block';
+            
+            // Simular envio (você precisa integrar com sua ferramenta de e-mail marketing)
+            setTimeout(() => {
+                loading.style.display = 'none';
+                form.style.display = 'none';
+                successMessage.style.display = 'block';
+                
+                // IMPORTANTE: Aqui você integraria com:
+                // - ConvertKit, Mailchimp, ActiveCampaign, etc.
+                // - Seu autoresponder
+                // - Sistema de entrega do e-book
+                
+                console.log('Lead capturado:', { 
+                    nome: nome, 
+                    email: email, 
+                    nicho: 'Terapeutas',
+                    timestamp: new Date().toISOString(),
+                    source: 'Bridge Page'
+                });
+                
+                // Analytics (se tiver Google Analytics)
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'generate_lead', {
+                        'event_category': 'engagement',
+                        'event_label': 'ebook_download'
+                    });
+                }
+                
+            }, 3000);
+        }
+
+        // Efeitos visuais nos inputs
+        document.addEventListener('DOMContentLoaded', function() {
+            const inputs = document.querySelectorAll('input');
+            inputs.forEach(input => {
+                input.addEventListener('focus', function() {
+                    this.parentElement.style.transform = 'scale(1.02)';
+                    this.parentElement.style.transition = 'transform 0.3s ease';
+                });
+                
+                input.addEventListener('blur', function() {
+                    this.parentElement.style.transform = 'scale(1)';
+                });
+            });
+
+            // Animações suaves ao scroll (se a página for longa)
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Aplicar observer aos elementos principais
+            document.querySelectorAll('.benefit-item, .pain-point, .social-proof-story').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
